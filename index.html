@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de energía</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="light">
+    <div class="top-bar">
+      <h1 class="titulo">Calculadora de energía</h1>
+      <button id="toggleMode">🌙 Cambiar modo</button>
+    </div>
+
+    <div class="container">
+      <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre del aparato" required />
+        <input type="number" id="potencia" placeholder="Potencia (W)" required />
+        <input type="number" id="horas" placeholder="Horas por día" required />
+        <select id="categoria">
+          <option value="iluminacion">Iluminación</option>
+          <option value="cocina">Cocina</option>
+          <option value="entretenimiento">Entretenimiento</option>
+          <option value="climatizacion">Climatización</option>
+          <option value="limpieza">Limpieza</option>
+          <option value="oficina">Oficina</option>
+          <option value="refrigeracion">Refrigeración</option>
+          <option value="baño">Baño</option>
+          <option value="otros">Otros</option>
+        </select>
+        <button type="submit">Agregar</button>
+      </form>
+      <div id="listaAparatos"></div>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+  
+
+</html>
